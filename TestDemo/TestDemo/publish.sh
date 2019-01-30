@@ -17,5 +17,5 @@ if [ $? -eq 0 ];then
 fi
 
 docker build -t testdemo .
-docker run -d --restart=always -p 8023:80 --name testdemo testdemo
+docker run -d --restart=always -p 8023:80 --name testdemo_test testdemo
 docker cp /etc/localtime testdemo:/etc/
