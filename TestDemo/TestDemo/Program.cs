@@ -19,6 +19,7 @@ namespace TestDemo
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseKestrel(e => e.ListenAnyIP(80))
                 .UseStartup<Startup>();
     }
 }
