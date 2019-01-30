@@ -4,7 +4,7 @@ RUN mkdir /TestDemo
 
 ARG env
 
-Copy /public/TestDemo
+Copy /publish  /TestDemo
 
 WORKDIR /TestDemo
 
