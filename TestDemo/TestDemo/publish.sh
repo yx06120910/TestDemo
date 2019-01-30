@@ -1,3 +1,4 @@
+#!/bin/sh
 docker container ls -a | grep "testdemo"
 
 if[ $? -eq 0 ];then
@@ -9,5 +10,5 @@ if[ $? -eq 0 ];then
 fi
 
 docker build -t testdemo --build-arg env="Development" .
-docker run -d --restart=always -p 8022:80 --name testdemo testdemo
+docker run -d --restart=always -p 8023:80 --name testdemo testdemo
 docker cp /etc/localtime testdemo:/etc/
