@@ -10,7 +10,4 @@ WORKDIR /TestDemo
 
 EXPOSE 80
 
-ENV  ASPNETCORE_ENVIRONMENT=$env
-
-RUN echo "Ö´ÐÐ»·¾³£º$env"
 CMD ["dotnet","TestDemo.dll"]

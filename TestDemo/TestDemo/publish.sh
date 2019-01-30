@@ -16,6 +16,6 @@ if [ $? -eq 0 ];then
 	docker network rm testdemo
 fi
 
-docker build -t testdemo --build-arg env="Development" .
+docker build -t testdemo .
 docker run -d --restart=always -p 8023:80 --name testdemo testdemo
 docker cp /etc/localtime testdemo:/etc/
