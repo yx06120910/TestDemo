@@ -2,9 +2,7 @@ FROM docker.io/microsoft/dotnet
 
 RUN mkdir /TestDemo
 
-ARG env
-
-Copy /publish /TestDemo
+COPY /publish /TestDemo
 
 WORKDIR /TestDemo
 
